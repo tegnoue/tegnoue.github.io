@@ -1,12 +1,231 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
+    <title>Guilherme Tegnoué</title>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .social-link {
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
-<body>
-    <h1>Teste</h1>
-    
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-black selection:text-white">
+
+    <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-40 border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="#" class="font-extrabold text-gray-900 text-xl tracking-tight hover:text-gray-600 transition-colors">GT.</a>
+            
+            <div class="hidden sm:flex gap-6 text-sm font-semibold text-gray-500">
+                <a href="#sobre" class="hover:text-gray-900 transition-colors">Sobre</a>
+                <a href="#formacao" class="hover:text-gray-900 transition-colors">Formação</a>
+                <a href="#experiencia" class="hover:text-gray-900 transition-colors">Experiência</a>
+                <a href="#cursos" class="hover:text-gray-900 transition-colors">Cursos e Certificações</a>
+                <a href="#skills" class="hover:text-gray-900 transition-colors">Skills</a>
+                <a href="#projetos" class="hover:text-gray-900 transition-colors">Projetos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 pt-32 pb-24 min-h-screen flex flex-col justify-center">
+        
+        <header class="mb-16 animate-fade-in-up">
+            <h1 class="text-5xl font-extrabold tracking-tight mb-4">Guilherme N. Tegnoué</h1>
+            <p class="text-xl text-gray-500 leading-relaxed">
+                Estudante de Engenharia de Software. Desenvolvo soluções utilizando <b>análise de dados</b>, <b>machine learning</b> e ferramentas como <b>Python</b> para resolver problemas.
+            </p>
+        </header>
+
+        <section id="sobre" class="scroll-mt-24">
+            <h2 class="text-3xl font-extrabold tracking-tight mb-0 border-b border-gray-100 pb-4">Sobre mim</h2>
+            <p class="text-gray-600 mt-2">Sou um jovem que sempre teve interesse em resolver problemas usando a lógica, nesse caminho, na adolescência alguns dos meu hobbies envolveu participar de olimpíadas científicas, onde conquistei uma medalha de bronze na Olimpíada Brasileira de Matemática e duas medalhas de ouro na Olimpíada Brasileira de Astronomia, além de outros prêmios. Atualmente tenho direcionado meu interesse e estudo às áreas de dados e Cybersegurança</p>
+        </section>
+
+        <section id="formacao" class="mt-24 scroll-mt-24">
+            <h2 class="text-3xl font-extrabold tracking-tight mb-10 border-b border-gray-100 pb-4">Formação</h2>
+            
+            <div class="space-y-12">
+                <article class="flex items-start gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <img src="image/unb.png" alt="Logo Universidade" class="w-14 h-14 rounded-full border border-gray-200 object-cover shadow-sm">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Bacharelado em Engenharia de Software</h3>
+                                <p class="text-gray-600 font-medium mt-1">Universidade de Brasília</p>
+                            </div>
+                            <span class="text-sm text-gray-400 font-medium mt-2 md:mt-0 tracking-wide">2023 &mdash; Atual</span>
+                        </div>
+                        
+                        <p class="text-gray-500 leading-relaxed mt-4">
+                            Atualmente no 7º Semestre, na universidade tive a oportunidade de aprender sobre conceitos de Estrutura de Dados, Arquitetura de Software, Algoritmos, Testes de Software, Interação Humano-Computador, entre outros.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="mt-24 scroll-mt-24">
+            <h2 class="text-3xl font-extrabold tracking-tight mb-10 border-b border-gray-100 pb-4">Experiência Profissional</h2>
+            
+            <div class="space-y-12">
+                <article class="flex items-start gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <img src="image/bradesco.png" alt="Logo Bradesco" class="w-14 h-14 rounded-full border border-gray-200 object-cover shadow-sm">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Bradesco Seguros</h3>
+                                <p class="text-gray-600 font-medium mt-1">Estagiário de Software</p>
+                            </div>
+                            <span class="text-sm text-gray-400 font-medium mt-2 md:mt-0 tracking-wide">junho 2026 &mdash; atual</span>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed mt-4">
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flex items-start gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <img src="image/anvisa.png" alt="Logo ANVISA" class="w-14 h-14 rounded-full border border-gray-200 object-cover shadow-sm">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Agência Nacional de Vigilância Sanitária - ANVISA</h3>
+                                <p class="text-gray-600 font-medium mt-1">Estagiário de Software</p>
+                            </div>
+                            <span class="text-sm text-gray-400 font-medium mt-2 md:mt-0 tracking-wide">Set 2024 &mdash; jun 2026</span>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed mt-4">
+                            Na ANVISA desenvolvi projetos voltados à área de dados. Durante meu período de estágio trabalhei com processos ETL em bancos de dados (SQL Server), desenvolvimento de algoritmos de limpeza de dados e machine learning utilizando python (Pandas, Scikit-learn, TensorFlow, numpy, entre outras). Atuei também na estruturação de dados, utilizando, por exemplo, NLP para classificar textos e documentos em PDF. Quanto à utilização/visualização desses dados, desenvolvi aplicativos, relatórios no Power BI e planilhas no excel.<br><br>
+                            Fiz parte de uma equipe muito talentosa e contribui para a estabilização/redução das filas de análise na área. Além disso, criei ferramentas de gestão de desempenho e produtividade que possibilitaram um acompanhamento mais transparente e eficiente entre os próprios colaboradores.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flex items-start gap-4">
+                    <div class="flex-shrink-0 mt-1">
+                        <img src="image/ctctech_logo.jpeg" alt="Logo CTC Tech" class="w-14 h-14 rounded-full border border-gray-200 object-cover shadow-sm">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">CTC Tech</h3>
+                                <p class="text-gray-600 font-medium mt-1">Jovem Aprendiz</p>
+                            </div>
+                            <span class="text-sm text-gray-400 font-medium mt-2 md:mt-0 tracking-wide">Outubro 2023 &mdash; Setembro 2024</span>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed mt-4">
+                            Tive contato com tecnologias de SOC como o Zabbix, também tive acesso a um treinamento sobre o framework ITIL 4. Colaborei com a manutenção e organização de serviços online.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="cursos" class="mt-24 scroll-mt-24">
+            <h2 class="text-3xl font-extrabold tracking-tight mb-8 border-b border-gray-100 pb-4">Cursos e Certificações</h2>
+            
+            <div class="space-y-6">
+                <article class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 group">
+                    <div class="flex items-center gap-4">
+                        <div class="flex-shrink-0">
+                            <img src="image/google_logo.jpeg" alt="Logo Google" class="w-12 h-12 rounded-full border border-gray-200 object-cover shadow-sm">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 group-hover:text-gray-500 transition-colors">Google Cybersecurity Professional Certificate</h3>
+                            <p class="text-gray-500 mt-0.5">Google</p>
+                        </div>
+                    </div>
+                    <span class="text-xs text-gray-500 font-medium bg-gray-50 border border-gray-100 px-3 py-1.5 rounded-full whitespace-nowrap mt-2 sm:mt-0">240 horas</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="mt-24 mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-extrabold tracking-tight mb-8 border-b border-gray-100 pb-4">Skills</h2>
+            
+            <div class="flex flex-wrap gap-3">
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Machine Learning</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Python</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Scikit-Learn</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Network Protocols</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">SQL</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Code-Review</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Linux</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Bash</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Incident Response</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Security Management</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Security Frameworks</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Web Development</span>
+                <span class="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-default hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-lg">Javascript</span>
+            </div>
+        </section>
+        <section id="projetos" class="space-y-12 mb-12 scroll-mt-24">
+            <h2 class="text-3xl font-extrabold tracking-tight mb-8 border-b border-gray-100 pb-4">Projetos</h2>
+            
+            <article class="group">
+                <a href="#" class="block">
+                    <h2 class="text-2xl font-bold group-hover:underline decoration-2 underline-offset-4">Automação e Classificação com Machine Learning</h2>
+                    <p class="text-gray-600 mt-2">Algoritmo em Python para automatizar a classificação e clusterização de processos regulatórios, estabilizando filas de análise.</p>
+                    <div class="flex gap-3 mt-3 text-sm font-medium text-gray-400">
+                        <span>Python</span> &middot; <span>Scikit-Learn</span> &middot; <span>SQLAlchemy</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="#" class="block">
+                    <h2 class="text-2xl font-bold group-hover:underline decoration-2 underline-offset-4">Portal de Transparência</h2>
+                    <p class="text-gray-600 mt-2">Interface web responsiva criada para facilitar o acesso público a dados dinâmicos e processos farmacêuticos.</p>
+                    <div class="flex gap-3 mt-3 text-sm font-medium text-gray-400">
+                        <span>HTML</span> &middot; <span>Tailwind CSS</span> &middot; <span>JavaScript</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="#" class="block">
+                    <h2 class="text-2xl font-bold group-hover:underline decoration-2 underline-offset-4">Otimizador de Grade Horária</h2>
+                    <p class="text-gray-600 mt-2">Sistema utilizando Teoria dos Grafos para otimização de horários e alocação de disciplinas, empacotado em containers.</p>
+                    <div class="flex gap-3 mt-3 text-sm font-medium text-gray-400">
+                        <span>FastAPI</span> &middot; <span>Docker</span> &middot; <span>Grafos</span>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <div class="fixed bottom-8 right-8 z-50">
+        <div class="flex flex-row items-center gap-3">
+            
+            <a href="https://github.com/tegnoue" target="_blank" class="social-link bg-gray-100 hover:bg-gray-200 text-gray-900 p-3.5 rounded-full shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="GitHub">
+                <i class="ph ph-github-logo text-2xl"></i>
+            </a>
+            
+            <a href="https://linkedin.com/in/tegnoue" target="_blank" class="social-link bg-blue-50 hover:bg-blue-100 text-blue-700 p-3.5 rounded-full shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="LinkedIn">
+                <i class="ph ph-linkedin-logo text-2xl"></i>
+            </a>
+            
+            <a href="mailto:guilhermetegnoue@outlook.com" class="social-link bg-red-50 hover:bg-red-100 text-red-600 p-3.5 rounded-full shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Email">
+                <i class="ph ph-envelope-simple text-2xl"></i>
+            </a>
+
+        </div>
+    </div>
+
 </body>
 </html>
